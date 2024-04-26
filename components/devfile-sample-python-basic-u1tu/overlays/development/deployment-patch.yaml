@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-u1tu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc_org/build-e2e-qclu-tenant/test-app-irlu/devfile-sample-python-basic-u1tu@sha256:d3102fe2139cf82b7fd9707c79af23f9c093f58e1a1c56015cab26bb35ed357a
+        name: my-python
+        resources: {}
+status: {}
